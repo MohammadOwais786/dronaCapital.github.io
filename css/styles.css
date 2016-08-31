@@ -657,7 +657,7 @@ section {
   margin-top: 2px;
 }
 .sticky-navigation .navbar-brand img {
-  max-height: 60px;
+  max-height: 50px;
 }
 .sticky-navigation .current a {
   color: #2196f3 !important;
