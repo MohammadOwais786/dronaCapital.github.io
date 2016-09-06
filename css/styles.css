@@ -1511,7 +1511,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 /* CONTACT FORM */
 .footer {
-  background: rgba(38, 39, 50, 0.85);
+  background: rgba(38, 39, 50, 0.70);
   margin-top: 125px;
 }
 .footer .footer-col {
@@ -1537,7 +1537,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   text-align: center;
 }
 .footer .footer-logo img {
-  max-height: 38px;
+  max-height: 80%;
 }
 
 .fixed-bg {
