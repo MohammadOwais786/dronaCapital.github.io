@@ -167,12 +167,12 @@ jQuery(document).ready(function ($) {
 		});
 		portfolioList.fadeOut(400);
 		setTimeout(function () {
-			$('#loader').show();
+			$('#loader1').show();
 		}, 400);
 		setTimeout(function () {
 			content.load(href, function () {
 				$('#loaded-content1 meta').remove();
-				$('#loader').hide();
+				$('#loader1').hide();
 				content.fadeIn(600);
 				$('#back-button1').fadeIn(600);
 			});
