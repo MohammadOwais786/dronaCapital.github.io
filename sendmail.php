@@ -29,7 +29,7 @@ $body .= "#Message: " . $message. ",　";
 
 
   //
-  mail( "spambox@designlab.co", $_POST['subject'], $body, $headers );
+  mail( "mohammadowaiz.786@gmail.com", $_POST['subject'], $body, $headers );
 
   //			^
   //  Replace with your email
