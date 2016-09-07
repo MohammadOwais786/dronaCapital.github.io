@@ -5,7 +5,7 @@
 =================================== */
 // makes sure the whole site is loaded
 jQuery(window).load(function () {
-	
+
 	'use strict';
         // will first fade out the loading animation
 	jQuery(".status").fadeOut();
@@ -46,7 +46,7 @@ $('.play-button').click(function () {
 		urlstop = urlstop.replace('autoplay=1', 'autoplay=0');
 		$('#video-expand .embed-responsive-item').attr('src', urlstop);
 	}
-	
+
 });
 
 /* ================================
@@ -104,7 +104,7 @@ jQuery(document).ready(function ($) {
 
 		var href = $(this).attr('href') + ' .single-project',
 			portfolioList = $('#portfolio-list'),
-			content = $('#loaded-content');
+			content = $('.loaded-content');
 
 		portfolioList.animate({
 			'marginLeft': '-120%'
@@ -118,7 +118,7 @@ jQuery(document).ready(function ($) {
 		}, 400);
 		setTimeout(function () {
 			content.load(href, function () {
-				$('#loaded-content meta').remove();
+				$('.loaded-content meta').remove();
 				$('#loader').hide();
 				content.fadeIn(600);
 				$('#back-button').fadeIn(600);
@@ -131,7 +131,7 @@ jQuery(document).ready(function ($) {
 		event.preventDefault();
 
 		var portfolioList = $('#portfolio-list')
-		content = $('#loaded-content');
+		content = $('.loaded-content');
 
 		content.fadeOut(400);
 		$('#back-button').fadeOut(400);
