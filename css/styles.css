@@ -973,6 +973,40 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   background-size: 30px 30px;
   border-radius: 5px;
 }
+#loader2 {
+  min-height: 930px;
+  position: relative;
+  display: none;
+}
+#loader2 .loader-icon {
+  background-color: #FFF;
+  margin: -35px -35px;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  background-size: 30px 30px;
+  border-radius: 5px;
+}
+#loader1 {
+  min-height: 930px;
+  position: relative;
+  display: none;
+}
+#loader1 .loader-icon {
+  background-color: #FFF;
+  margin: -35px -35px;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  background-size: 30px 30px;
+  border-radius: 5px;
+}
 .project-image img {
   max-width: 100%;
 }

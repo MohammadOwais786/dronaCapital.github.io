@@ -103,6 +103,113 @@ jQuery(document).ready(function ($) {
 		event.preventDefault();
 
 		var href = $(this).attr('href') + ' .single-project',
+			portfolioList1 = $('#portfolio-list1'),
+			content = $('#loaded-content1');
+
+		portfolioList1.animate({
+			'marginLeft': '-120%'
+		}, {
+			duration: 400,
+			queue: false
+		});
+		portfolioList1.fadeOut(400);
+		setTimeout(function () {
+			$('#loader1').show();
+		}, 400);
+		setTimeout(function () {
+			content.load(href, function () {
+				$('#loaded-content1 meta').remove();
+				$('#loader1').hide();
+				content.fadeIn(600);
+				$('#back-button1').fadeIn(600);
+			});
+		}, 800);
+
+	});
+
+	$('#back-button1').on('click', function (event) {
+		event.preventDefault();
+
+		var portfolioList1 = $('#portfolio-list1')
+		content = $('#loaded-content1');
+
+		content.fadeOut(400);
+		$('#back-button1').fadeOut(400);
+		setTimeout(function () {
+			portfolioList1.animate({
+				'marginLeft': '0'
+			}, {
+				duration: 400,
+				queue: false
+			});
+			portfolioList1.fadeIn(600);
+		}, 800);
+	});
+});
+
+/* ================================
+===  PROJECT LOADING           ====
+================================= */
+
+jQuery(document).ready(function ($) {
+	$('.more').on('click', function (event) {
+		event.preventDefault();
+
+		var href = $(this).attr('href') + ' .single-project',
+			portfolioList2 = $('#portfolio-list2'),
+			content = $('#loaded-content2');
+
+		portfolioList2.animate({
+			'marginLeft': '-120%'
+		}, {
+			duration: 400,
+			queue: false
+		});
+		portfolioList2.fadeOut(400);
+		setTimeout(function () {
+			$('#loader2').show();
+		}, 400);
+		setTimeout(function () {
+			content.load(href, function () {
+				$('#loaded-content2 meta').remove();
+				$('#loader2').hide();
+				content.fadeIn(600);
+				$('#back-button2').fadeIn(600);
+			});
+		}, 800);
+
+	});
+
+	$('#back-button2').on('click', function (event) {
+		event.preventDefault();
+
+		var portfolioList2 = $('#portfolio-list2')
+		content = $('#loaded-content2');
+
+		content.fadeOut(400);
+		$('#back-button2').fadeOut(400);
+		setTimeout(function () {
+			portfolioList2.animate({
+				'marginLeft': '0'
+			}, {
+				duration: 400,
+				queue: false
+			});
+			portfolioList2.fadeIn(600);
+		}, 800);
+	});
+});
+
+
+/* ================================
+===  PROJECT LOADING           ====
+================================= */
+
+jQuery(document).ready(function ($) {
+	$('.more').on('click', function (event) {
+		event.preventDefault();
+
+		var href = $(this).attr('href') + ' .single-project',
 			portfolioList = $('#portfolio-list'),
 			content = $('#loaded-content');
 
@@ -146,6 +253,7 @@ jQuery(document).ready(function ($) {
 		}, 800);
 	});
 });
+
 
 
 /* ================================
