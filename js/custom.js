@@ -99,7 +99,7 @@ function mailchimpCallback(resp) {
 ================================= */
 
 jQuery(document).ready(function ($) {
-	$('.more').on('click', function (event) {
+	$('.more1').on('click', function (event) {
 		event.preventDefault();
 
 		var href = $(this).attr('href') + ' .single-project',
@@ -152,7 +152,7 @@ jQuery(document).ready(function ($) {
 ================================= */
 
 jQuery(document).ready(function ($) {
-	$('.more').on('click', function (event) {
+	$('.more2').on('click', function (event) {
 		event.preventDefault();
 
 		var href = $(this).attr('href') + ' .single-project',
